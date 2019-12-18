@@ -18,6 +18,28 @@ and open the template in the editor.
                 username: "rasel",
                 password: "123456"
             }];
+        var newsFeed = [
+            {
+                username: "Bobby",
+                timeline: "So tired from all that learning!"
+            },
+            {
+                username: "Sally",
+                timeline: "Javascript is sooo hot!"
+            }
+        ];
+        var userNamePrompt = prompt("What's your username?");
+        var passwordPrompt = prompt("What's your password");
+        
+        function signIn(user, pass){
+            if (user === database[0].username &&
+                pass === database[0].password) {
+            console.log(newsFeed);
+        } else {
+            alert("Sry, wrong username and password");
+            }
+        }
+        signIn(userNamePrompt, passwordPrompt);
         </script>
     </body>
 </html>
