@@ -35,6 +35,9 @@ and open the template in the editor.
             if (user === database[0].username &&
                 pass === database[0].password) {
             console.log(newsFeed);
+            alert("login success");
+            document.getElementById("username").innerHtml = "Rasel";
+            document.getElementById("post").innerHtml = "Thanks for login";
         } else {
             alert("Sry, wrong username and password");
             }
