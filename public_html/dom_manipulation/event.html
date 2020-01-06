@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Dom Selectors</title>
+        <title>Dom Event</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/materialdesignicons.min.css">
@@ -121,47 +121,30 @@ and open the template in the editor.
                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                        <h3>Shopping List</h3>
+                                        <h3>Click Event</h3>
                                         <p id="first">Get it done today</p>
                                         <p class="second"> No Excuse</p>
                                         <ul>
-                                            <li random="23">Asia</li>
-                                            <li>Africa</li>
-                                            <li>Europe</li>
-                                            <li>America</li>
-                                        </ul>
+                                            <li><button id="click_event">Click here !!</button></li>
+                                            </ul>
                                         
-                                        <h4>InnerHtml</h4>
+                                        
+                                        
+                                        
+                                        
                                         <script>
-                                            document.getElementByTagName("");
-                                            //add attribute
-                                            document.querySelector("li").setAttribute("random", "500");
-                                            //ans: <li random="500">Asia</li>
-                                            
-                                            //add css specipic selector
-                                            document.querySelector("h3").style.color ="blue";
-                                            
-                                            //Adding class base on id
-                                            var title= document.getElementById("first");
-                                            title.className= "headding";
-                                            
-                                            //view classlist and add class spacific target selector
-                                            document.querySelector("li").classList.add("coolTitle");
-                                            
-                                            //view classlist and remove class spacific target selector
-                                            document.querySelector("li").classList.remove("coolTitle");
-                                            
-                                            //view classlist and add toggle spacific target selector
-                                            document.querySelector("h3").classList.toggle("coolTitle");
-                                            
-                                            //text added by innerHtml
-                                            document.querySelector("h4").innerHTML = "<em>Insert by InnerHTML</em>";
-                                            
-                                            //view child iteam
-                                            document.querySelectorAll("li")[2];
-                                            
-                                            //view parent element
-                                            document.querySelectorAll("li")[1].parentElement;
+                                           document.getElementById("click_event").addEventListener("click", myFunction);
+                                          document.getElementById("mouseleave_event").addEventListener("mouseleave", mouseleaveFunction);
+                                          
+                                               //button.addEventListener("mouseleave", function(){
+                                               function myFunction(){
+                                                  alert("Click Event");
+                                                  
+                                           };
+                                           function mouseleaveFunction(){
+                                                  alert("mouseleave_event !!");
+                                                  
+                                           };
                                         </script>
                         
                                     </div>
@@ -172,42 +155,11 @@ and open the template in the editor.
                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3>DOM Selectors</h3>
-                                         <div>
-                                           <p>getElementsByTagName</p>
-                                            <p>getElementsByClassName</p>
-                                            <p>getElementById</p>  
-                                         </div> 
-                                         <div>
-                                             <p>querySelector</p>
-                                           <p>querySelectorAll</p>     
-                                         </div>
-                                         <div>
-                                             <p>getAttribute</p>
-                                             <p>setAttribute</p>
-                                         </div>
-                                         <div>
-                                             <p>##Changing Styles</p>
-                                             <p>style.{property} //ok</p>
-                                         </div>
-                                         <div>
-                                             <p>className //best</p>
-                                             <p>classList //best</p>
-                                         </div>
-                                         <div>
-                                             <p>classList.add</p>
-                                             <p>classList.remove</p>
-                                             <p>classList.toggle</p>   
-                                         </div>
-                                         <div>
-                                             <p>##Bonus</p>
-                                             <p>innerHTML //DANGEROUS</p>  
-                                         </div>
-                                         <div>
-                                             <p>parentElement</p>
-                                             <p>children</p>  
-                                         </div>
-                                         <p>##It is important to CACHE selectors in variables</p>
+                                         <h3>Mouse leave event !!</h3>
+                                        <ul>
+                                            
+                                            <li><button id="mouseleave_event">Mouse leave event !!</button></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
