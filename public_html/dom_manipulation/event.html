@@ -67,51 +67,39 @@ and open the template in the editor.
                   </div>
                 </div>
               </div>
-              <button class="btn btn-success btn-block">New Project
-                <i class="mdi mdi-plus"></i>
-              </button>
+             <a class="btn btn-success btn-block" href="event.html">
+                <i class="menu-icon fas fa-redo-alt"></i> Refresh</a>
+             
             </div>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="index.html">
-              <i class="menu-icon mdi mdi-television"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
+             <i class="menu-icon fa fa-tachometer-alt"></i> Dashboard</a>
           </li>
+          
           <li class="nav-item">
-            <a class="nav-link" href="dom_selectors.html">
-             <i class="menu-icon fa fa-edit"></i> Dom Selectors</a>
+            <a class="nav-link" href="dom_selectors.html"> <i class="menu-icon fa fa-edit"></i>  Dom Selectors</a>
             
           </li>
           <li class="nav-item">
             <a class="nav-link" href="event.html">
-             <i class="menu-icon fa fa-edit"></i> Dom Event</a>
+             <i class="menu-icon fa fa-random"></i> Dom Event</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/charts/chartjs.html">
-              <i class="menu-icon mdi mdi-chart-line"></i>
-              <span class="menu-title">Charts</span>
-            </a>
+            <a class="nav-link" href="bg_generator.html">
+             <i class="menu-icon fa fa-image"></i> Background Generator</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/tables/basic-table.html">
-              <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
-            </a>
+            <a class="nav-link" href="#">
+              <i class="menu-icon fa fa-sign-out-alt"></i> Link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/icons/font-awesome.html">
-              <i class="menu-icon mdi mdi-sticker"></i>
-              <span class="menu-title">Icons</span>
-            </a>
+            <a class="nav-link" href="#">
+              <i class="menu-icon fa fa-sign-out-alt"></i> Link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-restart"></i>
-              <span class="menu-title">User Pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            
+            <a class="nav-link" href="#">
+              <i class="menu-icon fa fa-sign-out-alt"></i> Link</a>
           </li>
         </ul>
       </nav>
@@ -124,13 +112,7 @@ and open the template in the editor.
                                         <h3>Click Event</h3>
                                         <p id="first">Get it done today</p>
                                         <p class="second"> No Excuse</p>
-                                        <ul>
-                                            <li><button id="click_event">Click here !!</button></li>
-                                            </ul>
-                                        
-                                        
-                                        
-                                        
+                                        <button id="click_event">Click here !!</button>
                                         
                                         <script>
                                            document.getElementById("click_event").addEventListener("click", myFunction);
@@ -151,15 +133,11 @@ and open the template in the editor.
                                 </div>
                             </div>
                              
-                             
                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
                                          <h3>Mouse leave event !!</h3>
-                                        <ul>
-                                            
-                                            <li><button id="mouseleave_event">Mouse leave event !!</button></li>
-                                        </ul>
+                                        <button id="mouseleave_event">Mouse leave event !!</button>
                                     </div>
                                 </div>
                             </div>
@@ -169,16 +147,79 @@ and open the template in the editor.
                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                 
-                                        <p></p>
+                                        <h3>Insert text or iteam</h3>
+                                        <p><input type="text" placeholder="Enter Iteam" id="userinput" /> 
+                                            <button id="enter">Enter</button>
+                                        </p>
+                                        <ul>
+                                            <li>Asia</li>
+                                            <li>Africa</li>
+                                            <li>Europe</li>
+                                            <li>America</li>
+                                        </ul>
+                                        <script>
+                                            //var button = document.getElementById("enter");
+                                            var input = document.getElementById("userinput");
+                                            //var ul = document.getElementBySelector("ul");
+                                            //document.getElementById("click_event").addEventListener("click", myFunction);
+                                            //document.getElementById("enter").addEventListener("click", insFunction);
+                                            //function insFunction(){
+                                               // alert("Insert text");
+                                                //var li = document.createElement("li");
+                                                //li.appendChild(document.createTextNode("testing"));
+                                               // ul.appendChild(li);
+                                            //};
+                                            function inputLength(){
+                                                return input.value.length;
+                                            }
+                                            document.getElementById("enter").addEventListener("click", function(){
+                                                if(inputLength() > 0){
+                                                    document.createElement("li").appendChild(document.createTextNode(input.value));
+                                            document.getElementBySelector("ul").appendChild(document.createElement("li"));
+                                            input.value = "";
+                                                }
+                                            
+                                            });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
+                                        <h3>Key press event</h3>
+                                        <p><input type="text" placeholder="Enter Iteam" id="userinputbtn" /> 
+                                            <button id="enter">Enter key press</button>
+                                        </p>
+                                        <ul>
+                                            <li>Asia</li>
+                                            <li>Africa</li>
+                                            <li>Europe</li>
+                                            <li>America</li>
+                                        </ul>
+                                        <script>
+                                            var button = document.getElementById("enter");
+                                            var input = document.getElementById("userinputbtn");
+                                            var ul = document.getElementBySelector("ul");
+                                            
+                                            function inputLength(){
+                                                return input.value.length;
+                                            }
+                                            
+                                            function createKeyPressEvent(){
+                                                var li = document.createElement("li");
+                                                li.appendChild(document.createTextNode(input.value));
+                                                ul.appendChild(li);
+                                                input.value = "";
+                                            }
+                                               input.addEventListener("keypress", function(event){
+                                                   //console.log(event);
+                                                if( inputLength() > 0 && event.keyCode === 13){
+                                                createKeyPressEvent();
+                                            }
+                                            });
+                                        </script>
                  
-                                        <p></p>
                                     </div>
                                 </div>
                             </div>
@@ -204,13 +245,12 @@ and open the template in the editor.
     </div>
     <!-- page-body-wrapper ends -->
        
-        
-        
-
+ <!--
 <script src="../js/vendor.bundle.base.js"></script>
   <script src="../js/vendor.bundle.addons.js"></script>
   <script src="../js/off-canvas.js"></script>
   <script src="../js/misc.js"></script>
   <script src="../js/dashboard.js"></script>
+-->
     </body>
 </html>
