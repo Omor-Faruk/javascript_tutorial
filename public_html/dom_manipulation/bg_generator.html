@@ -142,25 +142,7 @@ h3 {
                                     </div>
                                 </div>
                             </div>
-                             <script>
-                                 var css = document.querySelector("h4");
-                                 var color1 = document.querySelector(".color1");
-                                 var color2 = document.querySelector(".color2");
-                                 var effect = document.getElementById("gradient");
-
-                                 //function setGradient()
-                                 color1.addEventListener("input", function() {
-	                                 effect.style.background = 
-	                                 "linear-gradient(to right, " 
-	                                 + color1.value 
-	                                 + ", " 
-	                                 + color2.value 
-	                                 + ")";
-                             });
-
-	                                 //css.textContent = body.style.background + ";";
-}
-                             </script>
+                            
                              
                              
                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
@@ -212,7 +194,25 @@ h3 {
     </div>
     <!-- page-body-wrapper ends -->
        
-        
+    <script>
+                                 var css = document.querySelector("h4");
+                                 var color1 = document.querySelector(".color1");
+                                 var color2 = document.querySelector(".color2");
+                                 var effect = document.getElementById("gradient");
+
+                                 //function setGradient()
+                                 color1.addEventListener("input", function() {
+	                                 effect.style.background = 
+	                                 "linear-gradient(to right, " 
+	                                 + color1.value 
+	                                 + ", " 
+	                                 + color2.value 
+	                                 + ")";
+                             });
+
+	                                 //css.textContent = body.style.background + ";";
+
+                             </script>     
         
 <!--<script src="../js/vendor.bundle.base.js"></script>
   <script src="../js/vendor.bundle.addons.js"></script>

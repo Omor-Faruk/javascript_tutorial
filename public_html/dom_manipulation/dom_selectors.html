@@ -112,39 +112,10 @@ and open the template in the editor.
                                         </ul>
                                         
                                         <h4>InnerHtml</h4>
-                                        <script>
-                                            document.getElementByTagName("");
-                                            //add attribute
-                                            document.querySelector("li").setAttribute("random", "500");
-                                            //ans: <li random="500">Asia</li>
-                                            
-                                            //add css specipic selector
-                                            document.querySelector("h3").style.color ="blue";
-                                            
-                                            //Adding class base on id
-                                            var title= document.getElementById("first");
-                                            title.className= "headding";
-                                            
-                                            //view classlist and add class spacific target selector
-                                            document.querySelector("li").classList.add("coolTitle");
-                                            
-                                            //view classlist and remove class spacific target selector
-                                            document.querySelector("li").classList.remove("coolTitle");
-                                            
-                                            //view classlist and add toggle spacific target selector
-                                            document.querySelector("h3").classList.toggle("coolTitle");
-                                            
-                                            //text added by innerHtml
-                                            document.querySelector("h4").innerHTML = "<em>Insert by InnerHTML</em>";
-                                            
-                                            //view child iteam
-                                            document.querySelectorAll("li")[2];
-                                            
-                                            //view parent element
-                                            document.querySelectorAll("li")[1].parentElement;
-                                        </script>
+                                        
                         
                                     </div>
+                                   
                                 </div>
                             </div>
                              
@@ -232,7 +203,37 @@ and open the template in the editor.
     </div>
     <!-- page-body-wrapper ends -->
        
-        
+  <script>
+                                            document.getElementByTagName("");
+                                            //add attribute
+                                            document.querySelector("li").setAttribute("random", "500");
+                                            //ans: <li random="500">Asia</li>
+                                            
+                                            //add css specipic selector
+                                            document.querySelector("h3").style.color ="blue";
+                                            
+                                            //Adding class base on id
+                                            var title= document.getElementById("first");
+                                            title.className= "coolTitle";
+                                            
+                                            //view classlist and add class spacific target selector
+                                            document.querySelector("li").classList.add("headding");
+                                            
+                                            //view classlist and remove class spacific target selector
+                                            document.querySelector("li").classList.remove("coolTitle");
+                                            
+                                            //view classlist and add toggle spacific target selector
+                                            document.querySelector("h3").classList.toggle("coolTitle");
+                                            
+                                            //text added by innerHtml
+                                            document.querySelector("h4").innerHTML = "<em>Insert by InnerHTML</em>";
+                                            
+                                            //view child iteam
+                                            document.querySelectorAll("li")[2];
+                                            
+                                            //view parent element
+                                            document.querySelectorAll("li")[1].parentElement;
+                                        </script>       
         
 <!--
 <script src="../js/vendor.bundle.base.js"></script>
