@@ -27,7 +27,7 @@ and open the template in the editor.
 }
 
 h2 {
-    font: 600 3.5em 'Raleway', sans-serif;
+    font: 600 2em 'Raleway', sans-serif;
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: uppercase;
@@ -202,6 +202,14 @@ h3 {
 
                                  //function setGradient()
                                  color1.addEventListener("input", function() {
+	                                 effect.style.background = 
+	                                 "linear-gradient(to right, " 
+	                                 + color1.value 
+	                                 + ", " 
+	                                 + color2.value 
+	                                 + ")";
+                             });
+	    color2.addEventListener("input", function() {
 	                                 effect.style.background = 
 	                                 "linear-gradient(to right, " 
 	                                 + color1.value 
