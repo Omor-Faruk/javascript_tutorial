@@ -51,8 +51,8 @@
     + Auth
     + Error
 -------------------------------------------------------------------*/
-.coolTitle {
-  text-align: center;
+.coolTitle{
+ text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
   font-size: 40px;
   transform: skewY(-10deg);
@@ -73,6 +73,19 @@
 
 .done {
   text-decoration: line-through;
+}
+
+.fa-redo-alt::before {
+	content: url('../images/redo.png');
+	top: 4px;
+	display: inline-block;
+	position: relative;
+}
+.fa-header-2::before {
+    content: url('../images/compare.png');
+	top: 4px;
+	display: inline-block;
+	position: relative;
 }
 /*-------------------------------------------------------------------*/
 /* === Import Bootstrap functions and variables === */
@@ -7407,7 +7420,7 @@
  */
 :root {
   --blue: #00aeef;
-  --indigo: #6610f2;
+  --indigo: #6610f2; 
   --purple: #ab8ce4;
   --pink: #E91E63;
   --red: #ff0017;
