@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Advance Javascript</title>
+        <title>Control Flow</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/materialdesignicons.min.css">
@@ -69,7 +69,7 @@ and open the template in the editor.
                   </div>
                 </div>
               </div>
-              <a class="btn btn-success btn-block" href="index.html">
+              <a class="btn btn-success btn-block" href="control_flow.html">
                 Refresh <i class="fa fa-redo-alt"></i> </a>
              
             </div>
@@ -131,27 +131,69 @@ and open the template in the editor.
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3>Topic title</h3> 
+                                         <h3>Ternary Operator: ?</h3>
+                                         <button id="true_check">True check</button>
+                                         
+                                         <div><button id="false_check">False check</button></div>
+                                         <div><button id="autoAns_check">Auto Ans check</button></div>
+                                         
 
                                     </div>
+                                    <script>
+                                        document.getElementById("true_check").addEventListener("click", checkTernary);
+                                        document.getElementById("false_check").addEventListener("click", falseCheck);
+                                        document.getElementById("autoAns_check").addEventListener("click", autoCheck);
+                                        
+                                        var answar = isUserValid(true) ? "Yoy may enter" : "Access Denied"; 
+                                         var answarFalse = isUserValid(false) ? "Yoy may enter" : "Access Denied";
+                                         var automatedAnswar = "Your account # is " + isUserValid(false) ? "1234" : "Not Available";
+                                                 
+                                                 
+                                             function isUserValid(bool){
+                                                 return bool;
+                                                 
+                                             };
+                                             function checkTernary(){
+                                                 alert( answar );
+                                             };
+                                             function falseCheck(){
+                                                 alert( answarFalse );
+                                             };
+                                             
+                                             function autoCheck(){
+                                                 alert( automatedAnswar );
+                                             };
+                                         </script>
                                 </div>
                             </div>
                              
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3>Topic title</h3>
+                                         <h3>Condition </h3>
+                                         <!--<button id="click_event">Click here !!</button>-->
+                                         
 
                                     </div>
+                                    <script>
+                                        //document.getElementById("click_event").addEventListener("click", myFunction);
+                                        
+                                             
+                                             
+                                         </script>
                                 </div>
                             </div>
                              
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                        <h3>Topic title</h3>
+                                        <h3></h3>
+                                        <!-- <button id="click_global">Click here !!</button>-->
                  
                                     </div>
+                                    <script>
+                                        
+                                         </script>
                                 </div>
                             </div>
                              

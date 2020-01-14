@@ -6,41 +6,228 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>|| Logical Operator Javascript</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../css/vendor.bundle.addons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="../images/favicon.png" />
     </head>
     <body>
-       <h1> || Logical Operator Javascript</h1>
-       <script>
-       //wrong    
-       if( name === "Billy" || name === "Ann"){
-           alert("Hi Billy or Ann!");
-       }
-       
-       //correct
-       var name= "Billy";
-       if( name === "Billy" || name === "Ann"){
-           alert("Hi Billy or Ann!");
-       }
-       </script>
-       
-       <h1> && Logical Operator Javascript</h1>
-       <script>
-        var firstName= "Billy";
-        var lastName= "Bob";
-       if( firstName === "Billy" && lastName === "Bob"){
-           alert("Hi Billy or Bob!");
-       }
-      //========== 
-       if(!(name ==="Bob")){
-           alert("Hi Bob");
-       }
-       !true
-       ans: false
-       !false
-       ans: true
+        
+        <div class="container-scroller">
+           <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html">
+          <img src="../images/logo.png" alt="logo">
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="index.html">
+          <img src="../images/logo-mini.svg" alt="logo">
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Basic</a>
+          </li>
+          <li class="nav-item active">
+            <a href="../dom_manipulation/index.html" class="nav-link"> Dom Manipulation</a>
+          </li>
+          <li class="nav-item">
+            <a href="../advance_js/index.html" class="nav-link">Advance JavaScript</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown d-none d-xl-inline-block">
+            <a class="nav-link" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <span class="profile-text">Rasel Ahsan</span>
+              <img class="img-xs rounded-circle" src="../images/55633.jpg" alt="Profile image">
+            </a>
+            
+          </li>
+        </ul>
+      </div>
+    </nav>
+            <div class="container-fluid page-body-wrapper">
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="profile-image">
+                  <img src="../images/55633.jpg" alt="profile image">
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Rasel Ahsan</p>
+                  <div>
+                    <small class="designation text-muted">Admin</small>
+                    <span class="status-indicator online"></span>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-success btn-block" href="logical_operator.html">
+                Refresh <i class="fa fa-redo-alt"></i> </a>
+             
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+             <i class="menu-icon fa fa-home"></i> Dashboard</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="string.html"> <i class="menu-icon fa fa-angle-double-right"></i>String</a>
+            </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="objet_and_array.html"> <i class="menu-icon fa fa-angle-double-right"></i>Object & Array</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="variable.html">
+             <i class="menu-icon fa fa-angle-double-right"></i> Variable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logical_operator.html">
+             <i class="menu-icon fa fa-angle-double-right"></i> Logical Operator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculator.html">
+              <i class="menu-icon fa fa-angle-double-right"></i> Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="function.html">
+              <i class="menu-icon fa fa-angle-double-right"></i> Function</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conditional.html">
+              <i class="menu-icon fa fa-angle-double-right"></i> Conditional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript_terminology.html">
+              <i class="menu-icon fa fa-angle-double-right"></i> Javascript Terminology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loops.html">
+              <i class="menu-icon fa fa-angle-double-right"></i> Loops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cls_10.html">
+              <i class="menu-icon fa fa-angle-double-right"></i> Javascript on our webpage</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="control_flow_cls8.html">
+              <i class="menu-icon fa fa-angle-double-right"></i> Control Flow</a>
+          </li>
+        </ul>
+      </nav>
+                 <div class="main-panel">
+                     <div class="content-wrapper">
+                         <div class="row">
+                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                         <h3>|| Logical Operator Javascript</h3> 
+                                         <button id="click_event">Click here !!</button>
+                                         
 
+                                    </div>
+                                    <script>
+                                        document.getElementById("click_event").addEventListener("click", myFunction);
+                                        
+                                             function myFunction(){
+                                                 var name= "Billy";
+                                                 if( name === "Billy" || name === "Ann"){
+                                                     alert("This is || Logical Operator Exampl");
+                                                 };
+                                             };
+                                         </script>
+
+                                    
+                                </div>
+                            </div>
+                             
+                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                         <h3> && Logical Operator Javascript</h3>
+                                         <button id="click_eventbtn">Click here !!</button>
+       
+
+                                    </div>
+                                    <script>
+                                        document.getElementById("click_eventbtn").addEventListener("click", logicalFunction);
+                                        function logicalFunction(){
+                                            var firstName= "Billy";
+                                            var lastName= "Bob";
+                                            if( firstName === "Billy" && lastName === "Bob"){
+                                                alert("This is && Logical Operator Example");
+                                            }
+                                        };
+        
        </script>
+                                </div>
+                            </div>
+                             
+                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <h3>=== Logical Operator Javascript</h3>
+                                        <button id="equal_eventbtn">Click here !!</button>
+                                        
+                 
+                                    </div>
+                                    <script>
+                                        document.getElementById("equal_eventbtn").addEventListener("click", equalFunction);
+                                        function equalFunction(){
+                                          if(!(name ==="Bob")){         
+                                             alert("Hi Bob");
+                                         }
+                                         !true;
+                                         //ans: false
+                                         !false;
+                                         //ans: true  
+                                        };
+                                         
+                                    </script>
+                                </div>
+                            </div>
+                             
+  
+                         </div><!--row-->
+                        			 
+			
+                     </div> <!--content-wrapper-->
+                     
+                     <footer class="footer">
+          <div class="container-fluid clearfix text-sm-center">
+            <span class="text-muted d-block text-center text-sm-center d-sm-inline-block">Copyright © 2018
+              <a href="#" target="_blank">Rasel Ahsan</a>. All rights reserved.</span>
+            
+          </div>
+        </footer>
+ 
+                </div> <!-- main-panel ends -->
+            </div>        
+     
+     
+    </div>
+    <!-- page-body-wrapper ends -->
+       
+        
+        
+<!--
+<script src="../js/vendor.bundle.base.js"></script>
+  <script src="../js/vendor.bundle.addons.js"></script>
+  <script src="../js/off-canvas.js"></script>
+  <script src="../js/misc.js"></script>
+  <script src="../js/dashboard.js"></script>
+-->
     </body>
 </html>
+
+
