@@ -131,18 +131,20 @@ and open the template in the editor.
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3>JavaScript Function Scope</h3>
-                                         <p>In JavaScript there are two types of scope:</p>
-                                         
-                                             <h4>Local scope/Variable: </h4>
-                                             <p>Local variables have Function scope: They can only be accessed from within the function.</p>
-                                             <h4>Global scope/variable: </h4>
-                                             <p>A variable declared outside a function, becomes GLOBAL.
-
-A global variable has global scope: All scripts and functions on a web page can access it.</p>
+                                         <h3>JavaScript Array</h3>
+                                         <p id="example"></p>
                                          
 
                                     </div>
+                                    
+                                    <script>
+                                        const array = [1, 2, 7, 13];
+                                        const double = []
+                                        const newArray = array.forEach(num => {
+                                           double.push(num * 2);
+                                        });
+                                        document.getElementById("example").innerHTML = 'ForEach', newArray;
+                                    </script>
                                 </div>
                             </div>
                              
