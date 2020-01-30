@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Advance Function</title>
+        <title>ES8</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/materialdesignicons.min.css">
@@ -69,7 +69,7 @@ and open the template in the editor.
                   </div>
                 </div>
               </div>
-              <a class="btn btn-success btn-block" href="advance_function.html">
+              <a class="btn btn-success btn-block" href="es8.html">
                 Refresh <i class="fa fa-redo-alt"></i> </a>
              
             </div>
@@ -131,35 +131,36 @@ and open the template in the editor.
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3>JavaScript Function Scope</h3>
+                                         <h3> ES8 Example 1:</h3>
+                                         <p id="letOneex"></p>
                                          
-                                         
-
                                     </div>
+                                    <script>
+                                                
+                                        
+                                          const fun = (a,b,c,d,) => {
+                                           document.getElementById("letOneex").innerHTML = 'Ans', a;   
+                                          };  
+                                          fun(1,2,3,4);
+                                         </script>
                                 </div>
                             </div>
                              
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3> JavaScript Function</h3>
-                                         <button id="click_event">Click here !!</button>
+                                         <h3> ES8 Example 2:</h3>
+                                         <p id="letTwoex"></p>
                                          
 
                                     </div>
                                     <script>
-                                        document.getElementById("click_event").addEventListener("click", second);
-                                        
-                                             const first = () => {
-                                                 const  = 'hi';
-                                                 const second = () => {
-                                                  const name = 'bobby';   
-                                                     alert(greet);
-                                                 }
-                                                 return second;
-                                             }
-                                             const newFunc = first();
-                                             newFunc();
+                        
+                                             const startLine = 'test';
+                                             let turtle = 'a';
+                                             let rabbit = 'b';
+                                            // $('#letTwoex')
+                                             document.getElementById("letTwoex").innerHTML = 'Ans', rabbit.padStart(8);
                                              
                                          </script>
                                 </div>
