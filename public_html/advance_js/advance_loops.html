@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>ES8</title>
+        <title>Advance Loops</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/materialdesignicons.min.css">
@@ -69,7 +69,7 @@ and open the template in the editor.
                   </div>
                 </div>
               </div>
-              <a class="btn btn-success btn-block" href="es8.html">
+              <a class="btn btn-success btn-block" href="advance_loops.html">
                 Refresh <i class="fa fa-redo-alt"></i> </a>
              
             </div>
@@ -131,37 +131,44 @@ and open the template in the editor.
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3> ES8 Example 1:</h3>
-                                         <p id="letOneex"></p>
+                                         <h3>JavaScript For loops</h3>
+                                         <p id="Floops"></p>
                                          
+
                                     </div>
+                                    
                                     <script>
-                                                
+                                        const basket = ['asik', 'Emon', 'Anik', 'Saddam'];
+                                        var data = '';
+                                        for( let i = 0; i < basket.length; i++){ 
+                                            if (i == 0){
+                                                data =  data + basket[i];
+                                            } else {
+                                                data =  data + ',  ' +  basket[i];
+                                            } 
+                                            
+                                            document.getElementById("Floops").innerHTML = 'Ans: ' + data;
+                                        }
                                         
-                                          const fun = (a,b,c,d,) => {
-                                           document.getElementById("letOneex").innerHTML = 'Ans', a;   
-                                          };  
-                                          fun(1,2,3,4);
-                                         </script>
+                                    </script>
                                 </div>
                             </div>
                              
                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                         <h3> ES8 Example 2:</h3>
-                                         <p id="letTwoex"></p>
+                                         <h3>Local JavaScript Variables</h3>
+                                         <button id="click_event">Click here !!</button>
                                          
 
                                     </div>
                                     <script>
-                        
-                                             const startLine = 'test';
-                                             let turtle = 'a';
-                                             let rabbit = 'b';
-                                            // $('#letTwoex')
-                                             document.getElementById("letTwoex").innerHTML = 'Ans', rabbit.padStart(8);
-                                             
+                                        document.getElementById("click_event").addEventListener("click", myFunction);
+                                        
+                                             function myFunction(){
+                                                 var saddam = "Local variables";
+                                                 alert(saddam);
+                                             };
                                          </script>
                                 </div>
                             </div>
