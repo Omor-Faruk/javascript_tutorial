@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JQuery Introduction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="css/vendor.bundle.addons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ 
+  <link rel="shortcut icon" href="images/favicon.png" />
+    </head>
+    <body>
+        
+        <div class="container-scroller">
+           <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="introduction.html">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="introduction.html">
+          <img src="images/logo-mini.svg" alt="logo">
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+          <li class="nav-item">
+            <a href="js_basic/index.html" class="nav-link">Basic</a>
+          </li>
+          <li class="nav-item active">
+            <a href="dom_manipulation/index.html" class="nav-link"> Dom Manipulation</a>
+          </li>
+          <li class="nav-item">
+            <a href="advance_js/index.html" class="nav-link">Advance Javascript</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown d-none d-xl-inline-block">
+            <a class="nav-link" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <span class="profile-text">Rasel Ahsan</span>
+              <img class="img-xs rounded-circle" src="images/55633.jpg" alt="Profile image">
+            </a>
+            
+          </li>
+        </ul>
+      </div>
+    </nav>
+            <div class="container-fluid page-body-wrapper">
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="profile-image">
+                  <img src="images/55633.jpg" alt="profile image">
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Rasel Ahsan</p>
+                  <div>
+                    <small class="designation text-muted">Admin</small>
+                    <span class="status-indicator online"></span>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="introduction.html">
+              <i class="menu-icon fa fa-angle-double-right"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              Basic UI Elements</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="menu-icon fa fa-angle-double-right"></i>
+              <span class="menu-title">Form elements</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="menu-icon fa fa-angle-double-right"></i>
+              <span class="menu-title">Charts</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="menu-icon fa fa-angle-double-right"></i>
+              <span class="menu-title">Tables</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="menu-icon fa fa-angle-double-right"></i>
+              <span class="menu-title">Icons</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon fa fa-angle-double-right"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            
+          </li>
+        </ul>
+      </nav>
+                 <div class="main-panel">
+                     <div class="content-wrapper">
+                         <div class="row">
+                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <h4>Event method 1</h4>
+                                        <button id="btn1">Click me</button>
+                 
+                 
+                                    </div>
+                                    <script type="text/javascript">
+                                        //window.load = function(){
+                                         //   document.getElementById('btn1').addEventListener('click', clickMethod1 );
+                                        //};
+                                        document.getElementById("btn1").addEventListener("click", clickMethod1);
+                                        function clickMethod1(){
+                                            alert('Event Return method 1');
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                             
+                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <h4>Event Return method 2</h4>
+                                        <button id="btn2">Click me</button>
+                 
+             
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(document).ready(function(){
+                                            $("#btn2").click(function(){
+                                                alert("Event Return method 2");
+                                            });
+                                        });
+                                    </script>
+                                    
+                                </div>
+                            </div>
+                             
+                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                 
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                 
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div><!--row-->
+                     </div> <!--content-wrapper-->
+                     
+                     <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2020
+              <a href="#" target="_blank">Rasel Ahsan</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted &amp; made with
+              <i class="mdi mdi-heart text-danger"></i>
+            </span>
+          </div>
+        </footer>
+ 
+                </div> <!-- main-panel ends -->
+            </div>        
+     
+     
+    </div>
+    <!-- page-body-wrapper ends -->
+       
+        
+ /*       
+
+<script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/vendor.bundle.addons.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <script src="js/dashboard.js"></script>*/
+    </body>
+</html>
