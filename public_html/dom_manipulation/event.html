@@ -23,7 +23,7 @@ and open the template in the editor.
         <a class="navbar-brand brand-logo" href="../index.html">
           <img src="../images/logo.svg" alt="logo">
         </a>
-        <a class="navbar-brand brand-logo-mini" href="index.html">
+        <a class="navbar-brand brand-logo-mini" href="../index.html">
           <img src="../images/logo-mini.svg" alt="logo">
         </a>
       </div>
@@ -161,7 +161,34 @@ and open the template in the editor.
                                         </ul>
                                         
                                     </div>
-                                    
+                                    <script>
+                                            var button = document.getElementById("enter");
+                                            var input = document.getElementById("userinput");
+                                            var ul = document.getElementBySelector("ul");
+                                            
+                                            button.addEventListener("click", function(){
+                                            var li = document.createElement("li");
+                                                li.appendChild(document.createTextNode("testing"));
+                                                ul.appendChild(li);    
+                                            });
+                                            //document.getElementById("click_event").addEventListener("click", myFunction);
+                                            //document.getElementById("enter").addEventListener("click", insFunction);
+                                            //function insFunction(){
+                                               // alert("Insert text");
+                                                
+                                            //};
+                                            //function inputLength(){
+                                            //    return input.value.length;
+                                           // }
+                                           // document.getElementById("enter").addEventListener("click", function(){
+                                           //     if(inputLength() > 0){
+                                             //       document.createElement("li").appendChild(document.createTextNode(input.value));
+                                           // document.getElementBySelector("ul").appendChild(document.createElement("li"));
+                                           // input.value = "";
+                                            //    }
+                                           // 
+                                          //  });
+                                        </script>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
@@ -212,30 +239,7 @@ and open the template in the editor.
   <script src="../js/misc.js"></script>
   <script src="../js/dashboard.js"></script>
 -->
-<script>
-                                            //var button = document.getElementById("enter");
-                                            var input = document.getElementById("userinput");
-                                            //var ul = document.getElementBySelector("ul");
-                                            //document.getElementById("click_event").addEventListener("click", myFunction);
-                                            //document.getElementById("enter").addEventListener("click", insFunction);
-                                            //function insFunction(){
-                                               // alert("Insert text");
-                                                //var li = document.createElement("li");
-                                                //li.appendChild(document.createTextNode("testing"));
-                                               // ul.appendChild(li);
-                                            //};
-                                            function inputLength(){
-                                                return input.value.length;
-                                            }
-                                            document.getElementById("enter").addEventListener("click", function(){
-                                                if(inputLength() > 0){
-                                                    document.createElement("li").appendChild(document.createTextNode(input.value));
-                                            document.getElementBySelector("ul").appendChild(document.createElement("li"));
-                                            input.value = "";
-                                                }
-                                            
-                                            });
-                                        </script>
+                                        
 <script>
                                             var button = document.getElementById("enterKey");
                                             var input = document.getElementById("userinputbtn");
