@@ -21,6 +21,25 @@ $("#page-container").click(function() {
 	$(".otw-sticky-content").click(function() { 
     removeDiv();
 });  
+
+//object create
+        document.getElementById("click_event").addEventListener("click", myFunction);
+        document.getElementById("enter").addEventListener("click", insFunction);
+       function insFunction(){
+            alert("Insert text");
+
+        };
+        function inputLength(){
+            return input.value.length;
+         }
+         document.getElementById("enter").addEventListener("click", function(){
+             if(inputLength() > 0){
+                document.createElement("li").appendChild(document.createTextNode(input.value));
+         document.getElementBySelector("ul").appendChild(document.createElement("li"));
+         input.value = "";
+            }
+         
+          });
         </script>
         	
     </body>
