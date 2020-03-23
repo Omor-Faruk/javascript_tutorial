@@ -130,7 +130,7 @@ and open the template in the editor.
                              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                        <h3>var vs let</h3>
+                                        <h3>var Example</h3>
                                         <p id="letvsvar"></p>
                  
                                         
@@ -147,9 +147,19 @@ and open the template in the editor.
                              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
+                                        <h3>Let Example</h3>
+                                        <p id="letex"></p>
                  
-                                        <p></p>
+                                        
                                     </div>
+                                    <script>
+                                        if(true){
+                                            let letVariable ="This is true for Let Variable";
+                                        }
+                                        document.getElementById("letex").innerHTML = letVariable ; 
+                                    </script>
+                 
+                                    
                                 </div>
                             </div>
                              
