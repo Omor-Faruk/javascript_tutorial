@@ -147,13 +147,14 @@ and open the template in the editor.
                              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
-                                        <h3>Let Example</h3>
+                                        <h3>Let Example: Declaring a Variable Using let</h3>
                                         <p id="letex"></p>
                  
                                         
                                     </div>
                                     <script>
-                                        if(true){
+                                        var letVariable ="This is true for var Variable";
+                                        {
                                             let letVariable ="This is true for Let Variable";
                                         }
                                         document.getElementById("letex").innerHTML = letVariable ; 
@@ -166,9 +167,20 @@ and open the template in the editor.
                              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
                                 <div class="card card-statistics">
                                     <div class="card-body">
+                                        <h3>Const Example</h3>
                  
-                                        <p></p>
+                                        <p id="exconst"></p>
                                     </div>
+                                    <script>
+                                    var  xyz = 10;
+                                    // Here x is 10
+                                    {  
+                                      const xyz = 2;
+                                      // Here x is 2
+                                    }
+                                    // Here x is 10
+                                    document.getElementById("exconst").innerHTML = xyz;
+                                    </script>
                                 </div>
                             </div>
                              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
